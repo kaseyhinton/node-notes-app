@@ -1,0 +1,19 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "A simple notes nodejs application.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kasey Hinton (kaseyjameshinton@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "yargs": "^10.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
