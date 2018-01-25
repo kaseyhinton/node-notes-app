@@ -4,7 +4,6 @@ const _ = require('lodash');
 const yargs = require('yargs');
 
 const argv = yargs.argv;
-// const command = process.argv[2];
 console.log(argv);
 
 const command = argv._[0];
@@ -13,13 +12,13 @@ switch (command) {
         notes.add(argv.title, argv.body);
         break;
     case 'read':
-        notes.read(argv.id);
+        notes.read(argv.title);
         break;
     case 'list':
-        notes.list();
+        notes.list(argv.title);
         break;
     case 'remove':
-        notes.remove();
+        notes.remove(argv.title);
         break;
     default:
         console.log('Command not recognized.');
